@@ -22,7 +22,7 @@
       @yield('conteudo')
       
     </main>
-  <footer class="py-2 bor">
+  <footer class="fixed-footer">
       <p>Michel N Souza &copy; 2023</p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

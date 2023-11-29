@@ -9,7 +9,7 @@
     <div class="card-header d-flex justify-content-between align-items-center">
         <h4 class="mb-0">Despesas cadastradas</h4>
       
-        <a class="btn btn-success" style="color:black;" href="{{route('despesas.create')}}">Cadastrar Despesa</a>
+        <a class="btn btn-success" href="{{route('despesas.create')}}">Cadastrar Despesa</a>
       
     </div>
     <div class="card-body">
@@ -35,7 +35,7 @@
                       <td>{{ $despesa->categoria }}</td>
                       <td>{{ $despesa->data_publicacao }}</td>
                       <td>
-                          <a href="{{ route('despesas.edit', $despesa->id) }}" class="btn btn-danger btn-sm">Editar</a>
+                          <a href="{{ route('despesas.edit', $despesa->id) }}" class="btn btn-success btn-sm">Editar</a>
                           <form action="{{ route('despesas.destroy', $despesa->id) }}" method="POST" style="display: inline-block;">
                               @csrf
                               @method('DELETE')
@@ -49,10 +49,10 @@
         </table>
 
         <hr>
-
+      <!--
         <div class="d-flex justify-content-center">
 
-            <!--{$despesas->links()}-->
+            {$despesas->links()}
 
 {{--            <nav>--}}
 {{--                <ul class="pagination mb-0">--}}
@@ -63,6 +63,7 @@
 {{--                    <li class="page-item"><a class="page-link" href="#">3</a></li>--}}
 {{--                </ul>--}}
 {{--            </nav>--}}
+          -->
         </div>
     </div>
 </div>

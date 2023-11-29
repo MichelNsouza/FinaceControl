@@ -14,6 +14,9 @@
         min-height: 100vh;
       justify-content: space-between;
     }
+    main {
+        flex: 1; /* Para que o conteúdo principal ocupe o espaço restante */
+    }
     header {
         background-color: #333;
         color: #fff;
@@ -40,6 +43,15 @@
         border: 1px solid #ccc;
         flex: 1;
     }
+  .fixed-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid #ccc;
+        padding: 10px 0;
+        text-align: center;
+    }
+  
     footer {
         background-color: #333;
         color: #fff;
