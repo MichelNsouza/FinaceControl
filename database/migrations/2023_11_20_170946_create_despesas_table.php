@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('despesas', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
+            $table->float('valor');
             $table->string('categoria');
             $table->date('data_publicacao');
             $table->timestamps();

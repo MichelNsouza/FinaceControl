@@ -17,6 +17,11 @@
                                 <label for="titulo">Título:</label>
                                 <input type="text" name="titulo" class="form-control" id="titulo" value="{{ $despesa->titulo }}" required>
                             </div>
+                          
+                            <div class="form-group">
+                                <label for="valor">Valor:</label>
+                                <input type="number" name="valor" class="form-control" id="valor" required>
+                            </div>
 
                             <div class="form-group">
                                 <label for="categoria">Categoria:</label>

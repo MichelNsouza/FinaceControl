@@ -31,6 +31,7 @@ class DespesasController extends Controller
         // Valide os dados recebidos do formulário, por exemplo:
         $validatedData = $request->validate([
             'titulo' => 'required',
+            'valor' => 'required',
             'categoria' => 'required',
             'data_publicacao' => 'required',
             // Adicione outras regras de validação conforme necessário
@@ -69,6 +70,7 @@ class DespesasController extends Controller
         if ($despesa) {
             $validatedData = $request->validate([
                 'titulo' => 'required',
+                'valor' => 'required',
                 'categoria' => 'required',
                 'data_publicacao' => 'required|date',
                 // Outras regras de validação, se aplicável

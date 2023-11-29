@@ -9,5 +9,9 @@ class Despesa extends Model
 {
     use HasFactory;
       protected $fillable = [
-        'titulo','categoria', 'data_publicacao'];
+                            'titulo',
+                            'categoria',  
+                            'valor', 
+                            'data_publicacao'
+                            ];
 }

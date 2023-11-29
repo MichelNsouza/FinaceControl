@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
+      justify-content: space-between;
     }
     header {
         background-color: #333;

@@ -11,6 +11,11 @@
             <input type="text" name="titulo" class="form-control" id="titulo" required>
         </div>
 
+      <div class="form-group">
+          <label for="valor">Valor:</label>
+          <input type="number" name="valor" class="form-control" id="valor" required>
+      </div>
+
         <div class="form-group">
             <label for="categoria">Categoria:</label>
             <input type="text" name="categoria" class="form-control" id="categoria" required>

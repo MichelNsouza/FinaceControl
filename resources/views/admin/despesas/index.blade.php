@@ -17,8 +17,9 @@
         <table class="table">
             <thead>
             <tr>
-                <!--th scope="col">#</th>-->
+                <th scope="col">#</th>
                 <th scope="col">Título</th>
+                <th scope="col">Valor $</th>
                 <th scope="col">Categoria</th>
                 <th scope="col">Data de publicação</th>
                 <th scope="col">Ações</th>
@@ -28,7 +29,9 @@
 
               @foreach($despesas as $despesa)
                   <tr>
+                      <td>{{ $despesa->id }}</td>
                       <td>{{ $despesa->titulo }}</td>
+                      <td>{{ $despesa->valor }}</td>
                       <td>{{ $despesa->categoria }}</td>
                       <td>{{ $despesa->data_publicacao }}</td>
                       <td>
